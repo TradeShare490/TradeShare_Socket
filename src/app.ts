@@ -41,10 +41,13 @@ io.on("connection", (socket) => {
 		console.log(receiver)
 		const user = getUser(receiver);
 		console.log(user)
-		io.to(user.socketId).emit("getMessage", {
-			sender,
-			content
-		});
+		if (user) {
+			io.to(user.socketId).emit("getMessage", {
+				sender,
+				content
+			});
+		}
+
 	});
 	// fetch existing users
 
