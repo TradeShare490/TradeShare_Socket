@@ -23,7 +23,7 @@ const getUser = (userId: any) => {
 };
 const io = new Server(httpServer, {
 	cors: {
-		origin: 'http://localhost:8081',
+		origin: '*',
 		methods: ["GET", "POST"],
 		credentials: true
 	},
