@@ -6,7 +6,7 @@
   "author": "Tung Leu <leudeptrai@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --config nodemon.json src/app.ts"
+    "start": "nodemon --config nodemon.json src/app.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
